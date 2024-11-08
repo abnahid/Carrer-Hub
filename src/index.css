@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.custom-gradient-btn {
+    @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF];
+  }
