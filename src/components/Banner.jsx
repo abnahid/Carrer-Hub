@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="md:w-1/2 ">
             <h2 className="text-7xl font-extrabold text-gray-800">
               One Step Closer To Your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF] animate-gradient">
                 Dream Job
               </span>
             </h2>
@@ -17,7 +17,7 @@ const Banner = () => {
               you need for your future. Come find it. Manage all your job
               applications from start to finish.
             </p>
-            <button className="btn custom-gradient-btn mt-6 font-extrabold text-white">
+            <button className="btn custom-gradient-btn animate-gradient mt-6 font-extrabold text-white">
               Get Started
             </button>
           </div>

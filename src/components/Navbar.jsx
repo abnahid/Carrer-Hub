@@ -93,7 +93,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 gap-2">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  font-extrabold text-[#FFFFFF]">
+          <a className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  font-extrabold text-[#FFFFFF] animate-gradient">
             Apply Now
           </a>
         </div>

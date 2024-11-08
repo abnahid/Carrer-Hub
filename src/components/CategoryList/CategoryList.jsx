@@ -25,20 +25,17 @@ const CategoryList = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className="bg-gray-50 p-6 rounded-lg 
+            className="p-6 rounded-lg 
              bg-[#eef2ff]"
           >
-            {/* Icon or Image */}
             <div className="text-5xl text-indigo-400 mb-4">
               <img src={category.logo} alt="" />
             </div>
 
-            {/* Category Title */}
             <h3 className="text-lg font-semibold text-gray-700">
               {category.category_name}
             </h3>
 
-            {/* Jobs Available */}
             <p className="text-gray-400">{category.availability}</p>
           </div>
         ))}
