@@ -8,6 +8,7 @@ import Blogs from "./components/Blogs/Blogs";
 import Error from "./components/Error";
 import Home from "./components/Home";
 import JobDetails from "./components/Job/JobDetails";
+import Statistics from "./components/Statistics";
 import "./index.css";
 
 const loadJobs = () => fetch("/jobs.json");
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
+        loader: loadBlogs,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics/>,
         loader: loadBlogs,
       },
       {
