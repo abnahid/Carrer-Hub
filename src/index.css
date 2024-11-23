@@ -1,31 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: "Manrope", sans-serif;
-    scroll-behavior: smooth;
+* {
+  font-family: "Manrope", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .custom-gradient-btn {
-    @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF];
-  }
+  @apply bg-gradient-to-r from-[#7E90FE] to-[#9873FF];
+}
 
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient-animation 3s ease infinite;
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-animation 3s ease infinite;
+}
+
+/* marquee */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 20s linear infinite;
+}

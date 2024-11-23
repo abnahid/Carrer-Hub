@@ -14,7 +14,7 @@ const FeaturedJobs = () => {
   return (
     <div className="py-12 bg-white">
       {/* Heading */}
-      <div className="text-center space-y-4">
+      <div className="text-center space-y-4 mb-8">
         <h2 className="text-5xl font-extrabold text-gray-900">Featured Jobs</h2>
         <p className="text-gray-500 font-medium mb-8">
           Explore thousands of job opportunities with all the information you

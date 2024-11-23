@@ -112,6 +112,101 @@
           "email": "info@gmail.com",
           "address": "Dhanmondi 32, Sukrabad Dhaka, Bangladesh"
         }
-      }
+      },
+      {
+        "id": 7,
+        "logo": "https://i.ibb.co.com/x1NvvGR/pngwing-com.png",
+        "job_title": "Cloud Solutions Architect",
+        "company_name": "Amazon Web Services",
+        "remote_or_onsite": "Remote",
+        "location": "Sylhet, Bangladesh",
+        "job_type": "Part Time",
+        "salary": "80k-120k",
+        "job_description": "Design scalable, secure cloud infrastructure solutions for clients. Ensure cloud architecture meets business objectives. Implement automation tools to optimize operational efficiency. Perform cost analysis for cloud usage and implement savings strategies.",
+        "job_responsibility": "Gather client requirements to design robust cloud solutions. Develop detailed architectural diagrams and guide the engineering team in implementation. Optimize cloud resource utilization for cost-effectiveness and scalability. Stay updated with the latest trends in cloud technologies to recommend suitable tools and practices.",
+        "educational_requirements": "Bachelor’s degree in Computer Science or related field.",
+        "experiences": "3-5 years of experience in cloud technologies.",
+        "contact_information": {
+            "phone": "01760-11 22 33",
+            "email": "aws.jobs@gmail.com",
+            "address": "Sylhet Tower, Zindabazar, Sylhet, Bangladesh"
+        }
+    },
+    {
+        "id": 8,
+        "logo": "https://i.ibb.co.com/K65f2Rk/pngwing-com-4.webp",
+        "job_title": "AI Research Scientist",
+        "company_name": "Microsoft",
+        "remote_or_onsite": "Remote",
+        "location": "Chattogram, Bangladesh",
+        "job_type": "Full Time",
+        "salary": "120k-170k",
+        "job_description": "Research and develop AI models to advance Microsoft's suite of AI-powered tools.",
+        "job_responsibility": "Lead projects on machine learning, deep learning, and AI model optimization.",
+        "educational_requirements": "PhD or Master’s in AI, Machine Learning, or a related field.",
+        "experiences": "5+ years of AI research experience.",
+        "contact_information": {
+            "phone": "01870-33 44 55",
+            "email": "careers@microsoft.com",
+            "address": "Sea View Complex, Agrabad, Chattogram, Bangladesh"
+        }
+    },
+    {
+        "id": 9,
+        "logo": "https://i.ibb.co.com/wQ26BQP/Downpic-cc-2295394661-removebg-preview.webp",
+        "job_title": "iOS Application Developer",
+        "company_name": "Apple Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "Dhaka, Bangladesh",
+        "job_type": "Full Time",
+        "salary": "100k-150k",
+        "job_description": "Develop and maintain high-performance iOS applications. Use innovative design principles to enhance user experience. Troubleshoot and fix application bugs while ensuring scalability and reliability. Collaborate with the design team to align UI components.",
+        "job_responsibility": "Write clean and maintainable code in Swift and Objective-C. Develop user-friendly features and collaborate with UI/UX designers for seamless designs. Conduct regular app performance optimization. Stay updated with Apple’s development guidelines and new features for continuous improvement in app functionalities.",
+        "educational_requirements": "Bachelor’s degree in Computer Science or Software Engineering.",
+        "experiences": "3-4 years of experience in iOS development.",
+        "contact_information": {
+            "phone": "01670-44 55 66",
+            "email": "jobs@apple.com",
+            "address": "Banani, Dhaka, Bangladesh"
+        }
+    },
+    {
+        "id": 10,
+        "logo": "https://i.ibb.co.com/F4cfp1T/pngwing-com-2.webp",
+        "job_title": "Graphics Designer",
+        "company_name": "Adobe",
+        "remote_or_onsite": "Remote",
+        "location": "Barisal, Bangladesh",
+        "job_type": "Contract",
+        "salary": "60k-90k",
+        "job_description": "Create engaging visuals and graphics for Adobe’s clients and internal projects. Develop designs for digital and print platforms. Collaborate with teams to align branding with project objectives, ensuring high-quality visual communication and aesthetic appeal.",
+        "job_responsibility": "Design creative solutions for marketing campaigns, branding, and UI/UX projects. Use Adobe Creative Suite tools to create graphics. Collaborate with cross-functional teams to ensure design consistency. Revise designs based on feedback and stay updated with design trends to produce innovative results.",
+        "educational_requirements": "Diploma or Bachelor’s in Graphic Design or a related field.",
+        "experiences": "2-3 years of graphic design experience.",
+        "contact_information": {
+            "phone": "01580-22 33 44",
+            "email": "hr@adobe.com",
+            "address": "Barisal IT Park, Barisal, Bangladesh"
+        }
+    },
+    {
+        "id": 11,
+        "logo": "https://i.ibb.co.com/F62BtKf/pngwing-com-1.png",
+        "job_title": "Backend Developer",
+        "company_name": "Spotify",
+        "remote_or_onsite": "Onsite",
+        "location": "Dhaka, Bangladesh",
+        "job_type": "Full Time",
+        "salary": "110k-160k",
+        "job_description": "Develop and maintain server-side logic for Spotify’s streaming platform. Optimize application performance and manage databases effectively. Collaborate with team members to ensure seamless functionality of backend systems, enabling efficient music streaming and data management.",
+        "job_responsibility": "Design and implement backend services to support scalable applications. Collaborate with front-end developers for seamless integration. Optimize server performance and troubleshoot issues. Manage database architecture and ensure data security. Keep up-to-date with the latest backend technologies and industry trends.",
+        "educational_requirements": "Bachelor’s in Software Engineering or a related discipline.",
+        "experiences": "3-5 years of backend development experience.",
+        "contact_information": {
+            "phone": "01960-66 77 88",
+            "email": "careers@spotify.com",
+            "address": "Tejgaon Industrial Area, Dhaka, Bangladesh"
+        }
+    }
   
   ]

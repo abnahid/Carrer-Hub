@@ -16,13 +16,11 @@ const Job = ({ job }) => {
   } = job;
   return (
     <div className="bg-white p-10 border rounded-lg border-gray-200 hover:shadow-lg transition-shadow duration-300 space-y-4 ">
-      <img
-        src={logo}
-        alt={`${company_name} logo`}
-        className="h-8 w-auto mb-4 text"
-      />
+      <div className="h-auto w-36">
+        <img src={logo} alt={`${company_name} logo`} className="h-14" />
+      </div>
 
-      <div className="">
+      <div className="mt-4">
         <h3 className="text-2xl font-semibold text-gray-700">{job_title}</h3>
         <p className="text-xl font-semibold text-gray-500">{company_name}</p>
       </div>
