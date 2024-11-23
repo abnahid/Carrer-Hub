@@ -1,6 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../index.css";
+import { AuthContext } from "./../context/AuthProvider";
 
 const Navbar = () => {
+  const { user, signOutUser } = useContext(AuthContext);
+  const [activeTab, setActiveTab] = useState("register");
+  const fullName = user?.displayName || "";
+  const nameParts = fullName.split(" ");
+  const firstName = nameParts[0];
   const activeStyle =
     "font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF]";
 
@@ -93,9 +101,69 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 gap-2">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  font-extrabold text-[#FFFFFF] animate-gradient">
-            Apply Now
-          </a>
+          <p className="normal-case text-lg font-semibold mr-3 hidden md:block">
+            {firstName}
+          </p>
+          {user && user?.email ? (
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img alt="User Avatar" src={user?.photoURL} />
+                </div>
+              </div>
+
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-60 p-2 shadow"
+              >
+                <li>
+                  <Link to="/applied" className="justify-between">
+                    Profile
+                    <span className="badge bg-green-200 text-green-800">
+                      New
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link>Settings</Link>
+                </li>
+                <li>
+                  <button onClick={signOutUser} className="text-red-600">
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <Link
+                to="/login"
+                className={`${
+                  activeTab === "login"
+                    ? "text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  animate-gradient"
+                    : "text-cyan-900"
+                } px-6 py-2 rounded-lg text-sm font-normal `}
+                onClick={() => setActiveTab("login")}
+              >
+                Login
+              </Link>
+              <Link
+                to="/register"
+                className={`${
+                  activeTab === "register"
+                    ? "text-white font-semibold bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  animate-gradient"
+                    : "text-cyan-900"
+                } px-6 py-2 rounded-lg text-sm font-normal`}
+                onClick={() => setActiveTab("register")}
+              >
+                Sign up
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </div>

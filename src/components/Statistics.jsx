@@ -1,12 +1,12 @@
 import {
-  BarChart,
   Bar,
-  XAxis,
-  YAxis,
+  BarChart,
   CartesianGrid,
-  Tooltip,
   Legend,
   ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
 
 const jobsData = [
@@ -108,58 +108,54 @@ const Statistics = () => {
   );
 
   return (
-    <div style={{ padding: "20px" }}>
-      <div className="text-center space-y-4 mb-8">
-        <h1 className="text-5xl font-extrabold text-gray-900">
-          Discover New Adventures
-        </h1>
-        <p className="text-gray-500 font-medium mb-8">
-          Explore, discover, and find inspiration through these exciting
-          journeys.
-        </p>
+    <div>
+      <h2 className="text-3xl text-center font-extrabold text-gray-900 bg-[#eef2ff] pb-10 pt-4">
+        New Adventures
+      </h2>
+
+      <div className="px-5 py-12">
+        <h2 className="text-center mb-8 text-2xl font-extrabold text-gray-900">
+          Remote vs Onsite
+        </h2>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={remoteOrOnsiteData}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="count" fill="#8884d8" />
+          </BarChart>
+        </ResponsiveContainer>
+
+        <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">
+          Jobs by Location
+        </h2>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={locationData}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="count" fill="#82ca9d" />
+          </BarChart>
+        </ResponsiveContainer>
+
+        <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">
+          Jobs by Type
+        </h2>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={jobTypeData}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="count" fill="#ffc658" />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
-
-      <h2 className="text-center mb-8 text-2xl font-extrabold text-gray-900">
-        Remote vs Onsite
-      </h2>
-      <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={remoteOrOnsiteData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="count" fill="#8884d8" />
-        </BarChart>
-      </ResponsiveContainer>
-
-      <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">
-        Jobs by Location
-      </h2>
-      <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={locationData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="count" fill="#82ca9d" />
-        </BarChart>
-      </ResponsiveContainer>
-
-      <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">
-        Jobs by Type
-      </h2>
-      <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={jobTypeData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="count" fill="#ffc658" />
-        </BarChart>
-      </ResponsiveContainer>
     </div>
   );
 };
