@@ -2,6 +2,7 @@
 import { AiOutlineDollar } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import "../../index.css";
 
 const Job = ({ job }) => {
   const {

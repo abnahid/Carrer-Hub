@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import "../../index.css";
 import Job from "../Job/Job";
-
 const FeaturedJobs = () => {
   const data = useLoaderData();
   const [jobs, setJobs] = useState([]);

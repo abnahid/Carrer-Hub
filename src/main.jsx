@@ -8,6 +8,7 @@ import Blogs from "./components/Blogs/Blogs";
 import Error from "./components/Error";
 import Home from "./components/Home";
 import JobDetails from "./components/Job/JobDetails";
+import Jobs from "./components/Jobs";
 import Statistics from "./components/Statistics";
 import "./index.css";
 
@@ -37,12 +38,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        element: <Statistics/>,
+        element: <Statistics />,
         loader: loadBlogs,
       },
       {
         path: "/job/:id",
         element: <JobDetails></JobDetails>,
+        loader: loadJobs,
+      },
+      {
+        path: "/jobs",
+        element: <Jobs></Jobs>,
         loader: loadJobs,
       },
       {
