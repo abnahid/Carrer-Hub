@@ -58,7 +58,7 @@ const Statistics = () => {
       </div>
 
       {/* Remote vs Onsite Chart */}
-      <h2>Remote vs Onsite</h2>
+      <h2 className="text-center mb-8 text-2xl font-extrabold text-gray-900">Remote vs Onsite</h2>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={remoteOrOnsiteData}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -71,7 +71,7 @@ const Statistics = () => {
       </ResponsiveContainer>
 
       {/* Jobs by Location Chart */}
-      <h2>Jobs by Location</h2>
+      <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">Jobs by Location</h2>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={locationData}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -84,7 +84,7 @@ const Statistics = () => {
       </ResponsiveContainer>
 
       {/* Jobs by Type Chart */}
-      <h2>Jobs by Type</h2>
+      <h2 className="text-center my-8 text-2xl font-extrabold text-gray-900">Jobs by Type</h2>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={jobTypeData}>
           <CartesianGrid strokeDasharray="3 3" />
